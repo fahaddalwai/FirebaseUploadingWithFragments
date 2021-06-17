@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605133931373",
+    "project_id": "navigatingwithfragments",
+    "storage_bucket": "navigatingwithfragments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605133931373:android:b2ca41b5f558dbeaf4d064",
+        "android_client_info": {
+          "package_name": "com.example.navigatingwithfragments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605133931373-4efeuqh0ahnqdqtmd893e5ifmcn03po6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwjwPlzOijwcQFXO9QGHQeqiOQBwbwqX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605133931373-4efeuqh0ahnqdqtmd893e5ifmcn03po6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

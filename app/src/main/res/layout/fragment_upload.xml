@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadtofirebase">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="113dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_choose_image"
+            android:layout_width="213dp"
+            android:layout_height="95dp"
+            android:text="upload" />
+
+        <EditText
+            android:id="@+id/edit_text_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="File Name" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="412dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="ExtraText">>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            tools:src="@tools:sample/avatars" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="154dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar">
+
+        <Button
+            android:id="@+id/button_upload"
+            android:layout_width="221dp"
+            android:layout_height="171dp"
+            android:layout_weight="0"
+            android:text="Button to Upload"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
